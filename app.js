@@ -68,10 +68,12 @@ console.log(y2)
 //multiply
 let y3=testMultiply(4,7)
 console.log(y3)
+
 let y4=testMultiply(y[0],5)
 console.log(y4)
 return [y2[0], y4[0],'4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'];
  }
+
 
 testSumAndMultiply(4,7,5);
 
@@ -119,6 +121,9 @@ function testSumArray(testArray) {
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 ///exper
+// count=sum(testArray[0],testArray[1])
+// count= sum(count[0]+testArray[2]);
+// console.log(count[0]);
 // count=sum(textArray[0],textArray[1]);
   // count=sum(count[0],testArray[1])      
   // count= sum(count[0],textArray[2]) 
@@ -135,6 +140,7 @@ Test this function by hand in the console to get it working, and when you think 
 let multArr=[2,3,4]
 let count1=1;
 // Write your code here
+
 function testMultiplyArray(multArr) {
   
  count1=testMultiply(count1,multArr[0]);
@@ -143,7 +149,6 @@ function testMultiplyArray(multArr) {
     console.log(count1);
     return [count1[0],'The numbers 2,3,4 have a product of 24.']
    
-}
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(multArr);
