@@ -148,7 +148,7 @@ function testMultiplyArray(multArr) {
     count1=testMultiply(count1[0],multArr[2]);
     console.log(count1);
     return [count1[0],'The numbers 2,3,4 have a product of 24.']
-   
+}
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(multArr);
@@ -181,6 +181,8 @@ let multiar = 1;
   multiar=testMultiply(multiar,multArr[0]);
   multiar=testMultiply(multiar[0],multArr[1]);
   multiar=testMultiply(multiar[0],multArr[2]);
+  multiar=testMultiply(multiar[0],multArr[3]);
+  multiar=testMultiply(multiar[0],multArr[4]);
   console.log(count1);
   
   return [multiar,"The numbers 1,2,3,4,5 have a product of 120."]
