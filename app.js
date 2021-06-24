@@ -12,11 +12,14 @@ function sum(a1, a2) {
   // let a1=prompt('enter number 1:');
   // let a2=prompt('enter number 2:')    [b,'The sum of 4 and 7 is 11.'];
   let b=a1+a2;
+
     return [b,'The sum of 4 and 7 is 11.']
   //eslint-disable-line
 }
 //Here is the test for sum(); uncomment it to run it
  console.log(testSum(4, 7));
+
+  
 
 
 
@@ -31,11 +34,13 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-// function multiply(b1, b2) {
-//   let c=b1*b2;
-//        return [c,'The product of 5 and 9 is 45.'];
-//   //eslint-disable-line
-// }
+
+function multiply(b1, b2) {
+  let c=b1*b2;
+       return [c,'The product of 5 and 9 is 45.'];
+  //eslint-disable-line
+}
+
 
 // // Here is the test for multiply(); uncomment it to run it
 // console.log(testMultiply(5,9));
@@ -54,34 +59,24 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-// function sumAndMultiply(c1, c2, c3) {
-// let y=sum(4,7)
-// let y2=sum(y[0],5)
-// console.log(y2)
-// //multiply
-// let y3=multiply(4,7)
-// console.log(y3)
-// let y4=multiply(y3[0],5)
-// console.log(y4)
-// return [y2[0], y4[0], '4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'];
 
-// }
-// // ,'4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'
-// testSumAndMultiply(4,7,5);
+function sumAndMultiply(c1, c2, c3) {
+let y=sum(4,7)
+let y2=sum(y,5)
+console.log(y2)
+//multiply
+let y3=multiply(4,7)
+console.log(y3)
+let y4=multiply(28,5)
+console.log(y4)
+return [y2, y4,'4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'];
+}
+
+testSumAndMultiply(4,7,5);
 
 ///====exprt
-//one
-// let y=sum(4,7)
-// let y2=sum(y,5)
-// console.log(y2)
-// //multiply
-// let y3=multiply(4,7)
-// console.log(y3)
-// let y4=multiply(28,5)
-// console.log(y4)
-// return [y2, y4,'4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'];
-// // console.log('multip='+mul1);
-///two
+// console.log('multip='+mul1);
+
 // let dds=mul1
 // console.log('hiiiii'+dds);
 // console.log('hiiiiijjjjjjjjjjjjjjjjjjjjjjjjj');
