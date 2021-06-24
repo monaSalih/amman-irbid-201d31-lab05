@@ -62,14 +62,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 function sumAndMultiply(c1, c2, c3) {
 let y=sum(4,7)
-let y2=sum(y,5)
+let y2=sum(y[0],5)
 console.log(y2)
 //multiply
 let y3=multiply(4,7)
 console.log(y3)
-let y4=multiply(28,5)
+let y4=multiply(y3[0],5)
 console.log(y4)
-return [y2, y4,'4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'];
+return [y2[0], y4[0],'4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'];
 }
 
 testSumAndMultiply(4,7,5);
@@ -102,15 +102,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 let testArray = [2, 3, 4]; 
-let count;
-
+let acount=0;
 function testSumArray(testArray) {
-  for (let i=0;i<testArray.length ;i++){
-  count= count+testArray[i];
-  console.log(count);
-  return [count[0],'2,3,4 was passed in as an array of numbers, and 9 is their sum.']
- }
-  //eslint-disable-line
+ 
+   for (let i=0; i<testArray.length;i++)
+      {acount =sum(acount,testArray.includes(i))
+   }
+ return [acount[0],'2,3,4 was passed in as an array of numbers, and 9 is their sum.']
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -119,6 +117,9 @@ function testSumArray(testArray) {
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 ///exper
+// count=sum(testArray[0],testArray[1])
+// count= sum(count[0]+testArray[2]);
+// console.log(count[0]);
 // count=sum(textArray[0],textArray[1]);
   // count=sum(count[0],testArray[1])      
   // count= sum(count[0],textArray[2]) 
@@ -134,8 +135,14 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) {
+let product=1
+function multiplyArray(testArray) {
   //eslint-disable-line
+  for (let i=0; i<testArray.length;i++)
+  {product =multiply(product,testArray.includes(i))
+
+  }
+return [product[0],'The numbers 2,3,4 have a product of 24.']
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
