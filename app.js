@@ -11,8 +11,8 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) {
   // let a1=prompt('enter number 1:');
   // let a2=prompt('enter number 2:')
-  let d=a+b;
-    return [d,'The sum of 4 and 7 is 11.'];
+  let e=a+b;
+    return [e,'The sum of 4 and 7 is 11.'];
   //eslint-disable-line
 }
 // Here is the test for sum(); uncomment it to run it
