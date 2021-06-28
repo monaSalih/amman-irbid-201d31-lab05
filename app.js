@@ -139,21 +139,7 @@ Write a function called multiplyArray() that takes an array of numbers as its ar
 IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. This function should handle an array containing three elements. However, you may continue to use the + operator for string concatenation.
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
-let multArr=[2,3,4]
-let count1=1;
-// Write your code here
 
-function multiplyArray(multArr) {
-  
- count1=multiply(count1,multArr[0]);
-    count1=multiply(count1[0],multArr[1]);
-    count1=multiply(count1[0],multArr[2]);
-    console.log(count1,'tr5tr');
-    return [count1[0],'The numbers 2,3,4 have a product of 24.']
-}
-
-// Here is the test for multiplyArray(); uncomment it to run it
-testMultiplyArray(multArr);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
