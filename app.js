@@ -186,7 +186,7 @@ let multiar = 1;
   return [multiar,"The numbers 1,2,3,4,5 have a product of 120."]
 //   //eslint-disable-line
  }
-
+}
 // Here is the test for multiplyArray(); uncomment it to run it
  testMultiplyAnyArray(testDynamicArray);
 
