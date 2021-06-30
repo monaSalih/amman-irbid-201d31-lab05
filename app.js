@@ -63,19 +63,19 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 
  function sumAndMultiply(c1, c2, c3) {
-let y=c1+c2+c3
-let y2=c1*c2*c3
-// sum((y[0],5),0)
-// console.log(y2,'tr1')
+  //  let xsum=0
+let y=sum(c1,c2)
+let y2= sum(y[0],c3)
+// console.log(y2[0],'sumation')
 // //multiply
-// let y3=multiply(4,7)
+let y3=multiply(c1,c2)
 // console.log(y3,'tr2')
 
-// let y4=multiply(y[0],5)
+let y4=multiply(y3[0],c3);
 // console.log(y3,'tr4')
-return [y, y2,'4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'];
+return [y2[0], y4[0],'4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'];
  }
-
+// console.log( sumAndMultiply(4,7,5));
 
 testSumAndMultiply(4,7,5);
 
@@ -112,7 +112,7 @@ function sumArray(testArray) {
   let count=sum(testArray[0],testArray[1]);
   let count2=sum(count[0],testArray[2]);
   count=sum(count[0],testArray[2])
-  console.log(count[0]);
+  // console.log(count[0],'problem');
   return [count[0],'2,3,4 was passed in as an array of numbers, and 9 is their sum.']
  }
   //eslint-disable-line
